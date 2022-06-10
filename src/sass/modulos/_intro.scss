@@ -1,0 +1,71 @@
+.intro {
+  height: 810px;
+  background: url("../img/santins-fundo-header.webp") no-repeat center center;
+  background-size: cover;
+  padding-top: 27px;
+
+  display: grid;
+  grid-template-rows: auto 1fr;
+
+  &__header {
+    .container {
+      @include flex(center, space-between);
+    }
+
+    .header__nav {
+      @include flex(center, space-between, 2rem);
+      .nav__menu {
+        @include flex(center, space-between, 2rem);
+        a {
+          display: block;
+          color: var(--cor-branco-300);
+          font-weight: var(--font-semi-bold);
+          text-transform: uppercase;
+          letter-spacing: 0.1em;
+          position: relative;
+          &:hover,
+          &:focus {
+            &::after {
+              opacity: 1;
+              bottom: -2px;
+            }
+          }
+          &::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: var(--cor-verde-100);
+            position: absolute;
+            bottom: -6px;
+            left: 0;
+            opacity: 0;
+            transition: 450ms var(--pop);
+          }
+        }
+      }
+
+      .nav__destaque {
+        a {
+          &:last-child {
+            margin-left: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  &__conteudo {
+    @include flex(center, center);
+    h1 {
+      color: var(--cor-branco-300);
+      font-weight: var(--font-extra-bold);
+      font-size: 2.5rem;
+      line-height: 2.5rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      max-width: 600px;
+      margin-bottom: 30px;
+    }
+  }
+}
