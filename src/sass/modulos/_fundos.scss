@@ -1,0 +1,80 @@
+.fundos {
+  position: relative;
+  top: -410px;
+  padding: 3.75rem 0;
+  margin-bottom: 150px;
+
+  .fundos__intro {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 6.25rem minmax(320px, 1fr) 1.25rem;
+    margin-bottom: 130px;
+    .intro__esquerda,
+    .intro__direita {
+      padding: 3.75rem;
+    }
+    .intro__esquerda {
+      grid-column: 1/8;
+      grid-row: 1/3;
+      background-color: var(--cor-branco-300);
+      .esquerda__conteudo {
+        h2 {
+          @include destaqueBox;
+          font-size: 3rem;
+          margin-bottom: 1.25rem;
+        }
+        p {
+          font-size: 1rem;
+          line-height: 1.88;
+          max-width: 530px;
+        }
+      }
+    }
+    .intro__direita {
+      grid-column: 7/-1;
+      grid-row: 2/-1;
+      background-color: var(--cor-verde-100);
+      @include flex(center, center, 0);
+      p {
+        color: var(--cor-azul-100);
+        font-size: 2.25rem;
+        font-weight: var(--font-bold);
+        line-height: 1.2;
+      }
+    }
+  }
+
+  .fundo__lista {
+    @include flex(initial, space-between, 2rem);
+    margin-bottom: 2rem;
+    li {
+      width: calc(50% - 2rem);
+      h3 {
+        color: var(--cor-azul-100);
+        font-size: 1.75rem;
+        font-weight: var(--font-bold);
+        margin-bottom: 1rem;
+        &::before {
+          content: "";
+          display: block;
+          width: 3.125rem;
+          height: 3.125rem;
+          background: url('../img/icon-money.svg') no-repeat center center;
+          background-size: cover;
+          margin-bottom: 1rem;
+        }
+      }
+      p {
+        font-size: 1rem;
+        line-height: 1.88;
+      }
+    }
+  }
+
+  .btn {
+    display: block;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

@@ -1,0 +1,30 @@
+.sobre {
+  display: flex;
+  flex-wrap: wrap;
+  height: 590px;
+  &__thumb {
+    width: 54%;
+    background: url("../img/santins-fundo-sobre.webp") no-repeat center center;
+    background-size: cover;
+  }
+  &__conteudo {
+    width: 46%;
+    @include flex(center, center, 0);
+    .conteudo__container {
+      width: 90%;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+      h2 {
+        font-size: 48px;
+        margin-bottom: 1rem;
+        font-weight: var(--font-light);
+        color: var(--cor-azul-100);
+        @include destaqueBox;
+      }
+      p {
+        margin-bottom: 3.125rem;
+      }
+    }
+  }
+}

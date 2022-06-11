@@ -1,0 +1,40 @@
+.numeros {
+  background-color: var(--cor-azul-100);
+  color: var(--cor-branco-300);
+  padding-top: 100px;
+  height: 774px;
+  .numeros__lista {
+    @include flex(flex-start, space-between, 2rem);
+    text-align: center;
+    h2 {
+      color: var(--cor-verde-100);
+      font-size: 3.125rem;
+      font-weight: var(--font-bold);
+      margin-bottom: 1.125rem;
+      span {
+        font-size: 1.375rem;
+      }
+      &::after {
+        content: "";
+        display: block;
+        width: 2rem;
+        height: 0.3125rem;
+        background-color: var(--cor-verde-100);
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0.5rem;
+        border-radius: 0.5rem;
+      }
+    }
+    p {
+      font-size: 0.9375rem;
+      font-weight: var(--font-bold);
+      text-transform: uppercase;
+    }
+    span {
+      font-size: 0.875rem;
+      font-weight: var(--font-media);
+      color: var(--cor-preto-50);
+    }
+  }
+}

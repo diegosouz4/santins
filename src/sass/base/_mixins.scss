@@ -1,3 +1,19 @@
+@mixin destaqueBox {
+  position: relative;
+  padding-left: 28px;
+  &::before {
+    content: "";
+    display: block;
+    width: 0.75rem;
+    height: 0.75rem;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 3px solid var(--cor-verde-100);
+  }
+}
+
 @mixin flex($align: initial, $justify: initial, $gap: 1rem) {
   display: flex;
   flex-wrap: wrap;
