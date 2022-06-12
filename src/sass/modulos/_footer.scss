@@ -1,7 +1,10 @@
 .footer {
-  background: var(--cor-verde-100) url("../img/santins-fundo-footer.webp")
-    no-repeat right bottom;
-  background-size: 76%;
+  background-color: var(--cor-verde-100);
+  @include min-query(768px) {
+    background: var(--cor-verde-100) url("../img/santins-fundo-footer.svg")
+      no-repeat right bottom;
+    background-size: cover;
+  }
   box-shadow: inset 0 100px 0 0 rgb(255, 255, 255);
   padding-bottom: 44px;
 

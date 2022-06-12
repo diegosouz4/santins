@@ -12,9 +12,14 @@
   grid-template-rows: auto 1fr;
 
   &__header {
+    @include max-query(1265px){
+      position: relative;
+      z-index: 2;
+    }
     .container {
       @include flex(center, space-between);
     }
+    
     .header__logo {
       @include max-query(764px) {
         svg {
