@@ -3,12 +3,24 @@
   flex-wrap: wrap;
   height: 590px;
   &__thumb {
-    width: 54%;
+    width: 20%;
+    @include min-query(764px) {
+      width: 54%;
+    }
+    @include max-query(500px) {
+      display: none;
+    }
     background: url("../img/santins-fundo-sobre.webp") no-repeat center center;
     background-size: cover;
   }
   &__conteudo {
-    width: 46%;
+    width: 80%;
+    @include min-query(764px) {
+      width: 46%;
+    }
+    @include max-query(500px) {
+      width: 100%;
+    }
     @include flex(center, center, 0);
     .conteudo__container {
       width: 90%;

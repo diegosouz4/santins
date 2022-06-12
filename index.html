@@ -12,14 +12,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="./dir/css/style.css">
+  <script>document.documentElement.className = "js";</script>
 </head>
 <body>
   <section class="intro" aria-label="header do site">
-    <header class="intro__header">
+    <header class="intro__header" data-anime="top">
       <div class="container">
         <a href="#" class="header__logo"><svg width="224" height="51" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 223.9 49.7" style="enable-background:new 0 0 223.9 49.7" xml:space="preserve"><path fill="#ff0071" d="M195.2 43.8c1.3-1.7 2.6-3.4 3.6-4.6.3-.3 6.5 2 7.2 2.2 2.4.7 4.1 1.3 6.6.4.8-.3 1.5-.7 1.8-1.5.1-.3.1-.6 0-.9-.2-2.8-3.6-3.3-5.8-4.2-2.2-.9-4.5-1.7-6.6-2.9-5.6-3.2-6.4-10.1-1.7-14.5 4.5-4.2 10-4.6 15.7-3.1 2.4.6 4.7 1.9 7.4 3-1.3 2.4-2.4 4.3-3.4 6.2-2.3-.9-4.3-1.8-6.4-2.4-1.5-.4-4.9-1-6.2 0-.6.4-.9 1.1-1.1 1.7-.2.6-.2 1.2 0 1.8.8 1.6 4.5 2.2 6.1 2.8 2 .7 4.1 1.3 6.1 2.2 6.4 3.1 7.6 11.4 2.1 16-3.7 3.1-8.5 4.3-13.1 3.3-1.3-.3-12.1-3.6-12.1-4.6-.2-.3-.2-.6-.2-.9zM44.6 49.3c-2.5-.2-4.9-1.2-7-3.1-3-2.7-4.1-6.7-3.4-10.6.7-4.1 4.6-7.3 9.9-7.7 3.7-.3 7.4-.4 11.2-.5.7-3-.7-5.1-3.8-5.7-3.4-.6-6.6.5-9.6 1.9-.7.3-1.3.7-2.2 1.2-1.3-1.9-2.7-3.8-4.2-5.8 5.2-3.8 11-5.4 17.2-4.9C61.2 14.8 65 19 65 27.7v21.1h-8.6c-.1-.9-.1-2-.4-2.8-1.2.7-2.2 1.7-3.5 2.3-.8.3-1.7.5-2.5.7-1.9.3-3.7.4-5.4.3zM55.2 34c-3 .2-6.2.2-9.2.8-1 .2-2.2 1.7-2.4 2.7-.2 1 .5 2.5 1.2 3.2 1.7 1.7 5.5 1.6 8 .1 2.3-1.5 3.1-3.3 2.4-6.8zM0 43.7c1.3-1.7 2.6-3.4 3.6-4.6.3-.3 6.5 2 7.2 2.2 2.4.7 4.1 1.3 6.6.4.8-.3 1.5-.7 1.8-1.5.1-.3.1-.6 0-.9-.2-2.8-3.6-3.3-5.8-4.2-2.2-.9-4.5-1.7-6.6-2.9C1.1 29.1.3 22.2 5 17.8c4.5-4.2 10-4.6 15.7-3.1 2.4.6 4.7 1.9 7.4 3-1.3 2.4-2.4 4.3-3.4 6.2-2.3-.9-4.3-1.8-6.4-2.4-1.5-.4-4.9-1-6.2 0-.6.4-.9 1.1-1.1 1.7-.2.6-.2 1.2 0 1.8.8 1.6 4.5 2.2 6.1 2.8 2 .7 4.1 1.3 6.1 2.2 6.4 3.1 7.6 11.4 2.1 16-3.7 3.1-8.5 4.3-13.1 3.3C10.8 49.1 0 45.8 0 44.7v-1zM124.5 49.5c-5.1-1-9.3-4.7-9.6-10.2-.2-4.8-.2-18.2-.2-18.2h-4.6v-6.3c1.4-.1 2.8-.2 4.6-.4 0-3.1.2-7.8.2-7.8s7-1.5 9.2-2.3v10.3h7.1v6.7h-7.1v15.1c0 1.9.2 3.7 2.2 4.7 1.9.9 3.5.1 5.1-1 .3-.2.5-.4 1-.7 1.1 2.1 2.2 4.1 3.6 6.6-2.8 1.4-6 3.9-9.2 3.8-.7-.1-1.5-.2-2.3-.3zM82 49h-9.1V14.7h8.9c.1 1.1.2 2 .4 3.4.8-.5 1.4-.9 1.9-1.3 8.3-6.1 19.3-1.9 20.3 8.3.8 7.8.2 15.8.2 23.8h-8.9c-.1-.8-.2-1.7-.2-2.6v-16c0-1.1-.1-2.2-.3-3.2-.6-3.7-2.4-5.6-5.5-5.8-3.1-.2-6.4 1.9-7.2 5-.4 1.3-.5 2.8-.5 4.2-.1 6.1 0 12.2 0 18.5zM158.3 14.7h8.9c.1 1.1.1 1.9.2 2.9 2.3-1.2 4.6-2.5 6.9-3.1 8.4-2.2 15.6 3.5 16 12.7.3 7.2.1 14.3.1 21.7h-9.2c-.1-.8-.2-1.7-.2-2.6V30.6c0-1.1-.1-2.2-.2-3.2-.5-3.7-2.2-5.6-5.3-5.9-3-.3-6.3 1.7-7.3 4.6-.5 1.4-.7 2.9-.7 4.4-.1 6.1 0 12.2 0 18.5h-9.1c-.1-11.4-.1-22.7-.1-34.3zM141.3 14.7h9.1v34.2h-9.1V14.7z"/><circle fill="#ff0071" cx="145.8" cy="5.4" r="5.4"/></svg></a>
+        <button class="header__btn" data-menu="btn"><strong>Menu</strong><span></span></button>
         <nav class="header__nav">
-          <ul class="nav__menu">
+          <ul class="nav__menu" data-menu="menu">
             <li><a href="#sobre">A EMPRESA</a></li>
             <li><a href="#fundos">Nossos fundos</a></li>
             <li><a href="#newsletter">Conteúdos</a></li>
@@ -35,16 +37,16 @@
 
     <div class="intro__conteudo">
       <div class="container">
-        <h1>NEQUE PORRO QUISQUAM EST QUI DOLOREM IPSUM...</h1>
-        <a href="#" class="btn btn--fill">saber mais</a>
+        <h1 data-anime="left">NEQUE PORRO QUISQUAM EST QUI DOLOREM IPSUM...</h1>
+        <a data-anime="bottom" href="#" class="btn btn--fill">saber mais</a>
       </div>
     </div>
   </section>
 
   <main class="main">
     <section class="sobre" id="sobre" aria-label="sobre a Santins">
-      <div class="sobre__thumb"></div>
-      <div class="sobre__conteudo">
+      <div data-anime="left" class="sobre__thumb"></div>
+      <div data-anime="right" class="sobre__conteudo">
         <div class="conteudo__container">
           <h2><span class="texto--destaque">A</span> empresa</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam maximus tempor tellus non cursus. Donec nisl metus, sagittis at convallis at, laoreet eu nulla. Duis mattis luctus tellus at venenatis. <strong>Fusce molestie neque pulvinar magna ultrices,</strong> vel lobortis mauris mattis. Etiam suscipit consequat dolor, dignissim dictum neque pulvinar pharetra. Sed mattis euismod lorem at egestas.</p>
@@ -56,29 +58,29 @@
     <section class="numeros" aria-label="Nossos números">
       <div class="container">
         <ul class="numeros__lista">
-          <li>
-            <h2 data-numeros="4">4</h2>
+          <li data-anime="bottom">
+            <h2>4</h2>
             <p>Lorem</p>
           </li>
-          <li>
-            <h2 data-numeros="100">100<span>%</span></h2>
+          <li data-anime="bottom">
+            <h2>100 <span>%</span></h2>
             <p>Lorem</p>
           </li>
-          <li>
-            <h2 data-numeros="10">10</h2>
+          <li data-anime="bottom">
+            <h2>10</h2>
             <p>Lorem</p>
           </li>
-          <li>
-            <h2 data-numeros="162,6">162,6<span>%</span></h2>
+          <li data-anime="bottom">
+            <h2>162,6 <span>%</span></h2>
             <p>Lorem</p>
             <span>(lorem)</span>
           </li>
-          <li>
-            <h2 data-numeros="1">1º</h2>
+          <li data-anime="bottom">
+            <h2>1º</h2>
             <p>Lorem</p>
           </li>
-          <li>
-            <h2 data-numeros="297"><span>R$</span>297<span>MM</span></h2>
+          <li data-anime="bottom">
+            <h2><span>R$</span> 297 <span>MM</span></h2>
             <p>Lorem</p>
           </li>
         </ul>
@@ -87,7 +89,7 @@
 
     <section id="fundos" class="fundos" aria-label="Nossos fundos">
       <div class="container">
-        <div class="fundos__intro">
+        <div class="fundos__intro" data-anime="bottom">
           <div class="intro__esquerda">
             <div class="esquerda__conteudo">
               <h2 class="texto--destaque">Fundos</h2>
@@ -100,29 +102,71 @@
         </div>
 
         <ul class="fundo__lista">
-          <li>
+          <li data-anime="bottom">
             <h3>Fundo 1</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam maximus tempor tellus non cursus. Donec nisl metus, sagittis at convallis at, laoreet eu nulla. Duis mattis luctus tellus at venenatis. Fusce molestie neque pulvinar magna ultrices, vel lobortis mauris mattis.</p>
           </li>
-          <li>
+          <li data-anime="bottom">
             <h3>Fundo 2</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam maximus tempor tellus non cursus. Donec nisl metus, sagittis at convallis at, laoreet eu nulla. Duis mattis luctus tellus at venenatis. Fusce molestie neque pulvinar magna ultrices, vel lobortis mauris mattis.</p>
           </li>
-          <li>
+          <li data-anime="bottom">
             <h3>Fundo 3</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam maximus tempor tellus non cursus. Donec nisl metus, sagittis at convallis at, laoreet eu nulla. Duis mattis luctus tellus at venenatis. Fusce molestie neque pulvinar magna ultrices, vel lobortis mauris mattis.</p>
           </li>
-          <li>
+          <li data-anime="bottom">
             <h3>Fundo 4</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam maximus tempor tellus non cursus. Donec nisl metus, sagittis at convallis at, laoreet eu nulla. Duis mattis luctus tellus at venenatis. Fusce molestie neque pulvinar magna ultrices, vel lobortis mauris mattis.</p>
           </li>
         </ul>
 
-        <a href="#" class="btn btn--fill">saber mais</a>
+        <a data-anime="left" href="#" class="btn btn--fill">saber mais</a>
       </div>
     </section>
   </main>
-  
-  
+
+  <footer class="footer" id="contato">
+    <div class="container">
+      <div class="newsletter" data-anime="bottom">
+        <h2>Inscreva-se na nossa Newsletter</h2>
+        <form class="newsletter__form" action="" method="post">
+          <label for="">Seu email</label>
+          <input type="email" name="email" placeholder="contato@santins.com.br" required>
+          <button>Assinar Newsletter</button>
+        </form>
+      </div>
+
+      <div class="footer__conteudo" data-anime="bottom">
+        <div class="conteudo__info" >
+          <a href="#" class="info__logo"><svg width="171" height="39" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 223.9 49.7" style="enable-background:new 0 0 223.9 49.7" xml:space="preserve"><path fill="#ff0071" d="M195.2 43.8c1.3-1.7 2.6-3.4 3.6-4.6.3-.3 6.5 2 7.2 2.2 2.4.7 4.1 1.3 6.6.4.8-.3 1.5-.7 1.8-1.5.1-.3.1-.6 0-.9-.2-2.8-3.6-3.3-5.8-4.2-2.2-.9-4.5-1.7-6.6-2.9-5.6-3.2-6.4-10.1-1.7-14.5 4.5-4.2 10-4.6 15.7-3.1 2.4.6 4.7 1.9 7.4 3-1.3 2.4-2.4 4.3-3.4 6.2-2.3-.9-4.3-1.8-6.4-2.4-1.5-.4-4.9-1-6.2 0-.6.4-.9 1.1-1.1 1.7-.2.6-.2 1.2 0 1.8.8 1.6 4.5 2.2 6.1 2.8 2 .7 4.1 1.3 6.1 2.2 6.4 3.1 7.6 11.4 2.1 16-3.7 3.1-8.5 4.3-13.1 3.3-1.3-.3-12.1-3.6-12.1-4.6-.2-.3-.2-.6-.2-.9zM44.6 49.3c-2.5-.2-4.9-1.2-7-3.1-3-2.7-4.1-6.7-3.4-10.6.7-4.1 4.6-7.3 9.9-7.7 3.7-.3 7.4-.4 11.2-.5.7-3-.7-5.1-3.8-5.7-3.4-.6-6.6.5-9.6 1.9-.7.3-1.3.7-2.2 1.2-1.3-1.9-2.7-3.8-4.2-5.8 5.2-3.8 11-5.4 17.2-4.9C61.2 14.8 65 19 65 27.7v21.1h-8.6c-.1-.9-.1-2-.4-2.8-1.2.7-2.2 1.7-3.5 2.3-.8.3-1.7.5-2.5.7-1.9.3-3.7.4-5.4.3zM55.2 34c-3 .2-6.2.2-9.2.8-1 .2-2.2 1.7-2.4 2.7-.2 1 .5 2.5 1.2 3.2 1.7 1.7 5.5 1.6 8 .1 2.3-1.5 3.1-3.3 2.4-6.8zM0 43.7c1.3-1.7 2.6-3.4 3.6-4.6.3-.3 6.5 2 7.2 2.2 2.4.7 4.1 1.3 6.6.4.8-.3 1.5-.7 1.8-1.5.1-.3.1-.6 0-.9-.2-2.8-3.6-3.3-5.8-4.2-2.2-.9-4.5-1.7-6.6-2.9C1.1 29.1.3 22.2 5 17.8c4.5-4.2 10-4.6 15.7-3.1 2.4.6 4.7 1.9 7.4 3-1.3 2.4-2.4 4.3-3.4 6.2-2.3-.9-4.3-1.8-6.4-2.4-1.5-.4-4.9-1-6.2 0-.6.4-.9 1.1-1.1 1.7-.2.6-.2 1.2 0 1.8.8 1.6 4.5 2.2 6.1 2.8 2 .7 4.1 1.3 6.1 2.2 6.4 3.1 7.6 11.4 2.1 16-3.7 3.1-8.5 4.3-13.1 3.3C10.8 49.1 0 45.8 0 44.7v-1zM124.5 49.5c-5.1-1-9.3-4.7-9.6-10.2-.2-4.8-.2-18.2-.2-18.2h-4.6v-6.3c1.4-.1 2.8-.2 4.6-.4 0-3.1.2-7.8.2-7.8s7-1.5 9.2-2.3v10.3h7.1v6.7h-7.1v15.1c0 1.9.2 3.7 2.2 4.7 1.9.9 3.5.1 5.1-1 .3-.2.5-.4 1-.7 1.1 2.1 2.2 4.1 3.6 6.6-2.8 1.4-6 3.9-9.2 3.8-.7-.1-1.5-.2-2.3-.3zM82 49h-9.1V14.7h8.9c.1 1.1.2 2 .4 3.4.8-.5 1.4-.9 1.9-1.3 8.3-6.1 19.3-1.9 20.3 8.3.8 7.8.2 15.8.2 23.8h-8.9c-.1-.8-.2-1.7-.2-2.6v-16c0-1.1-.1-2.2-.3-3.2-.6-3.7-2.4-5.6-5.5-5.8-3.1-.2-6.4 1.9-7.2 5-.4 1.3-.5 2.8-.5 4.2-.1 6.1 0 12.2 0 18.5zM158.3 14.7h8.9c.1 1.1.1 1.9.2 2.9 2.3-1.2 4.6-2.5 6.9-3.1 8.4-2.2 15.6 3.5 16 12.7.3 7.2.1 14.3.1 21.7h-9.2c-.1-.8-.2-1.7-.2-2.6V30.6c0-1.1-.1-2.2-.2-3.2-.5-3.7-2.2-5.6-5.3-5.9-3-.3-6.3 1.7-7.3 4.6-.5 1.4-.7 2.9-.7 4.4-.1 6.1 0 12.2 0 18.5h-9.1c-.1-11.4-.1-22.7-.1-34.3zM141.3 14.7h9.1v34.2h-9.1V14.7z"/><circle fill="#ff0071" cx="145.8" cy="5.4" r="5.4"/></svg></a>
+          <p>Lorem ipsum</p>
+          <ul class="info__social">
+            <li><a href="#" target="_blank" rel="noopen" title="Santins facebook"><svg width="12" height="23" viewBox="0 0 12 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m11.06 12.84.601-3.954H7.837V6.308c0-1.117.516-2.148 2.235-2.148h1.761V.765s-1.59-.3-3.094-.3c-3.136 0-5.199 1.933-5.199 5.37v3.051H.017v3.954H3.54v9.625h4.297v-9.626h3.223z" fill="#56D7AF"/></svg></a></li>
+            <li><a href="#" target="_blank" rel="noopen" title="Santins instagram"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.304 5.523a4.942 4.942 0 0 0-4.942 4.941 4.915 4.915 0 0 0 4.942 4.942 4.942 4.942 0 0 0 4.941-4.942c0-2.707-2.234-4.94-4.941-4.94zm0 8.164a3.218 3.218 0 0 1-3.223-3.223c0-1.761 1.418-3.18 3.223-3.18a3.172 3.172 0 0 1 3.18 3.18c0 1.805-1.419 3.223-3.18 3.223zm6.273-8.336c0-.644-.516-1.16-1.16-1.16-.645 0-1.16.516-1.16 1.16 0 .645.515 1.16 1.16 1.16.644 0 1.16-.515 1.16-1.16zm3.266 1.16c-.086-1.547-.43-2.922-1.547-4.039-1.117-1.117-2.492-1.46-4.04-1.547-1.59-.086-6.359-.086-7.948 0-1.547.086-2.88.43-4.04 1.547C1.151 3.59.808 4.964.722 6.512c-.086 1.59-.086 6.359 0 7.949.086 1.546.43 2.879 1.546 4.039 1.16 1.117 2.493 1.46 4.04 1.547 1.59.085 6.359.085 7.949 0 1.547-.086 2.922-.43 4.039-1.547 1.117-1.16 1.46-2.493 1.547-4.04.086-1.59.086-6.359 0-7.949zm-2.063 9.625c-.3.86-.988 1.504-1.805 1.848-1.288.516-4.296.387-5.671.387-1.418 0-4.426.129-5.672-.387a3.258 3.258 0 0 1-1.848-1.848c-.516-1.246-.387-4.254-.387-5.671 0-1.376-.129-4.383.387-5.672a3.314 3.314 0 0 1 1.848-1.805c1.246-.516 4.254-.387 5.672-.387 1.375 0 4.383-.129 5.671.387.817.3 1.461.988 1.805 1.805.516 1.289.387 4.296.387 5.671 0 1.418.129 4.426-.387 5.672z" fill="#56D7AF"/></svg></a></li>
+            <li><a href="#" target="_blank" rel="noopen" title="Santins twitter"><svg width="23" height="19" viewBox="0 0 23 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.116 4.996c.859-.645 1.632-1.418 2.234-2.32a8.456 8.456 0 0 1-2.578.687A4.408 4.408 0 0 0 21.748.87a9.53 9.53 0 0 1-2.836 1.117A4.512 4.512 0 0 0 15.604.57a4.511 4.511 0 0 0-4.512 4.512c0 .343.043.687.129 1.03a13.09 13.09 0 0 1-9.324-4.726c-.387.645-.602 1.418-.602 2.278a4.44 4.44 0 0 0 2.02 3.738c-.73-.043-1.461-.215-2.063-.559v.043a4.517 4.517 0 0 0 3.61 4.426c-.344.086-.774.172-1.16.172-.301 0-.56-.043-.86-.086.559 1.805 2.234 3.094 4.211 3.137a9.071 9.071 0 0 1-5.586 1.933c-.387 0-.73-.043-1.074-.086 1.976 1.29 4.34 2.02 6.918 2.02 8.293 0 12.805-6.832 12.805-12.805v-.601z" fill="#56D7AF"/></svg></a></li>
+          </ul>
+        </div>
+
+        <nav class="conteudo__nav">
+          <h2>Menu</h2>
+          <ul>
+            <li><a href="#sobre">A empresa</a></li>
+            <li><a href="#fundos">Nossos fundos</a></li>
+            <li><a href="#newsletter">Conteúdos</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+
+        <div class="conteudo__contato">
+          <h2>Contato</h2>
+          <a href="mailto:contato@santins.com.br">contato@santins.com.br</a>
+        </div>
+
+        <p class="conteudo__descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam maximus tempor tellus non cursus. Donec nisl metus, sagittis at convallis at, laoreet eu nulla. Duis mattis luctus tellus at venenatis.</p>
+        <p class="conteudo__copy">© 2022 Santins</p>
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="./dir/js/main.js"></script>
 </body>
 </html>

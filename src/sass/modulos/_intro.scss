@@ -1,6 +1,10 @@
 .intro {
-  height: 810px;
-  background: url("../img/santins-fundo-header.webp") no-repeat center center;
+  height: 600px;
+  @include min-query(768px) {
+    height: 810px;
+  }
+  background: #020a39 url("../img/santins-fundo-header.webp") no-repeat center
+    center;
   background-size: cover;
   padding-top: 27px;
 
@@ -11,41 +15,171 @@
     .container {
       @include flex(center, space-between);
     }
+    .header__logo {
+      @include max-query(764px) {
+        svg {
+          width: 160px;
+          height: auto;
+        }
+      }
+    }
+
+    .header__btn {
+      cursor: pointer;
+      background: none;
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+      border: 0;
+      overflow: hidden;
+      @include flex(center, center, 0);
+      @include min-query(1265px) {
+        display: none;
+      }
+      @include min-query(640px) {
+        order: 2;
+      }
+      &:hover,
+      &:focus {
+        span {
+          &::before {
+            height: 17px;
+            top: -10px;
+          }
+        }
+      }
+      &.ativo {
+        span {
+          &::before {
+            transform: rotate(45deg);
+            top: 0;
+            height: 3px;
+            background-color: var(--cor-verde-100);
+            border: 0;
+          }
+          &::after {
+            top: 0;
+            transform: rotate(-45deg);
+          }
+        }
+      }
+
+      strong {
+        display: none;
+      }
+      span {
+        display: block;
+        border-radius: 3px;
+        width: 1.5rem;
+        height: 3px;
+        position: relative;
+        &::before,
+        &::after {
+          content: "";
+          display: block;
+          width: 100%;
+          height: 3px;
+          background-color: var(--cor-verde-100);
+          position: absolute;
+          transition: 250ms var(--pop);
+        }
+        &::before {
+          top: -8px;
+          left: 0;
+          height: 13px;
+          background: none;
+          border-top: 3px solid var(--cor-verde-100);
+          border-bottom: 3px solid var(--cor-verde-100);
+        }
+        &::after {
+          top: 0;
+          left: 0;
+        }
+      }
+    }
 
     .header__nav {
       @include flex(center, space-between, 2rem);
+      @include max-query(1265px) {
+        position: relative;
+      }
+      @include max-query(640px) {
+        width: 100%;
+        justify-content: center;
+      }
       .nav__menu {
-        @include flex(center, space-between, 2rem);
-        a {
-          display: block;
-          color: var(--cor-branco-300);
-          font-weight: var(--font-semi-bold);
-          text-transform: uppercase;
-          letter-spacing: 0.1em;
-          position: relative;
-          &:hover,
-          &:focus {
-            &::after {
-              opacity: 1;
-              bottom: -2px;
+        @include max-query(1265px) {
+          background-color: var(--cor-branco-300);
+          padding: 0.625rem;
+          position: absolute;
+          top: 50px;
+          right: 0;
+          width: 80%;
+          z-index: 3;
+          display: none;
+          &.ativo {
+            display: block;
+            opacity: 0;
+            animation: showMenu 450ms forwards var(--pop);
+          }
+          li {
+            & + li {
+              margin-top: 1.25rem;
+            }
+
+            a {
+              display: block;
+              color: var(--cor-azul-300);
+              font-weight: var(--font-semi-bold);
+              text-transform: uppercase;
+              letter-spacing: 0.1em;
+              position: relative;
+              padding: 1rem;
+              &:hover,
+              &:focus {
+                background: var(--cor-verde-100);
+                color: var(--cor-branco-300);
+              }
             }
           }
-          &::after {
-            content: "";
+        }
+
+        @include min-query(1266px) {
+          @include flex(center, space-between, 2rem);
+          a {
             display: block;
-            width: 100%;
-            height: 2px;
-            background-color: var(--cor-verde-100);
-            position: absolute;
-            bottom: -6px;
-            left: 0;
-            opacity: 0;
-            transition: 450ms var(--pop);
+            color: var(--cor-branco-300);
+            font-weight: var(--font-semi-bold);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            position: relative;
+            &:hover,
+            &:focus {
+              &::after {
+                opacity: 1;
+                bottom: -2px;
+              }
+            }
+            &::after {
+              content: "";
+              display: block;
+              width: 100%;
+              height: 2px;
+              background-color: var(--cor-verde-100);
+              position: absolute;
+              bottom: -6px;
+              left: 0;
+              opacity: 0;
+              transition: 450ms var(--pop);
+            }
           }
         }
       }
 
       .nav__destaque {
+        @include max-query(640px) {
+          @include flex(center, center, 1rem);
+        }
         a {
           &:last-child {
             margin-left: 1rem;
@@ -67,5 +201,16 @@
       max-width: 600px;
       margin-bottom: 30px;
     }
+  }
+}
+
+@keyframes showMenu {
+  from {
+    opacity: 0;
+    transform: translate3d(200px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
   }
 }

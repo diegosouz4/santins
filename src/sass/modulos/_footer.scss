@@ -1,0 +1,225 @@
+.footer {
+  background: var(--cor-verde-100) url("../img/santins-fundo-footer.webp")
+    no-repeat right bottom;
+  background-size: 76%;
+  box-shadow: inset 0 100px 0 0 rgb(255, 255, 255);
+  padding-bottom: 44px;
+
+  .newsletter {
+    background-color: var(--cor-branco-300);
+    box-shadow: 0 -5px 100px rgba(13, 16, 37, 0.06);
+    text-align: center;
+    padding: 3.75rem 1.25rem;
+    @include min-query(600px) {
+      padding: 3.75rem;
+    }
+    margin-bottom: 3.125rem;
+
+    h2 {
+      font-weight: var(--font-bold);
+      font-size: 1.5rem;
+      @include min-query(600px) {
+        font-size: 2.25rem;
+      }
+      color: var(--cor-azul-100);
+      margin-bottom: 2.625rem;
+    }
+    form {
+      @include min-query(600px) {
+        overflow: hidden;
+        display: flex;
+        flex-wrap: wrap;
+        height: 60px;
+      }
+      line-height: 60px;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 750px;
+
+      position: relative;
+      transition: 450ms var(--pop);
+      &:hover {
+        transform: scale(1.02);
+      }
+      &:focus {
+        background: red;
+      }
+      label {
+        display: none;
+      }
+      input {
+        width: 100%;
+        @include max-query(599px) {
+          height: 2.5rem;
+          line-height: 2.5rem;
+          border-radius: 60px;
+        }
+        @include min-query(600px) {
+          width: 65%;
+          border-radius: 60px 0 0 60px;
+        }
+        border: 1px solid var(--cor-branco-100);
+        padding: 0 2rem;
+        color: var(--cor-preto-100);
+        font-size: 1rem;
+        &:focus {
+          outline-color: var(--cor-verde-100);
+        }
+      }
+      button {
+        @include max-query(599px) {
+          height: 2rem;
+          line-height: 2rem;
+          border-radius: 60px;
+          height: 50px;
+          line-height: 50px;
+          width: 180px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        @include min-query(600px) {
+          width: 35%;
+          border-radius: 0 60px 60px 0;
+        }
+        border: none;
+        background: none;
+        background-color: var(--cor-verde-100);
+        color: var(--cor-branco-300);
+        font-size: 1rem;
+        font-weight: var(--font-bold);
+        cursor: pointer;
+        &:hover,
+        &:focus {
+          background-color: var(--cor-verde-150);
+        }
+      }
+    }
+  }
+
+  .footer__conteudo {
+    color: var(--cor-branco-300);
+    font-weight: var(--font-media);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+
+    @include min-query(560px) {
+      grid-template-columns: 2fr 1fr 1fr;
+      grid-template-rows: 39px minmax(300px, 1fr) auto auto;
+    }
+    @include min-query(851px) {
+      grid-template-columns: repeat(12, 1fr);
+      gap: 30px 20px;
+    }
+    h2 {
+      font-weight: var(--font-bold);
+      font-size: 1.375rem;
+      line-height: 1.36;
+      margin-bottom: 1rem;
+    }
+    .conteudo__info {
+      @include flex(flex-start, space-between);
+      flex-direction: column;
+
+      @include min-query(560px) {
+        grid-column: 1/3;
+        grid-row: 1/3;
+      }
+      @include min-query(851px) {
+        grid-column: 1/4;
+      }
+      p {
+        font-size: 1rem;
+        font-weight: var(--font-bold);
+        line-height: 1.88;
+      }
+      .info__social {
+        @include flex(center, center, 1.25rem);
+        li {
+          a {
+            display: block;
+            width: 45px;
+            height: 45px;
+            background-color: var(--cor-branco-300);
+            border-radius: 50%;
+            position: relative;
+            transition: 450ms var(--pop);
+            box-shadow: 0px 13px 18px rgba(17, 19, 35, 0.08);
+            &:hover,
+            &:focus {
+              transform: scale(1.06);
+            }
+            svg {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+            }
+          }
+        }
+      }
+    }
+
+    .conteudo__nav {
+      @include min-query(560px) {
+        grid-column: 3/4;
+        grid-row: 2/3;
+      }
+      @include min-query(851px) {
+        grid-column: 5/7;
+      }
+      ul {
+        li {
+          & + li {
+            margin-top: 1rem;
+          }
+          a {
+            color: var(--cor-branco-300);
+            font-size: 1rem;
+            line-height: 1.25;
+          }
+        }
+      }
+    }
+
+    .conteudo__contato {
+      @include min-query(560px) {
+        grid-column: 4/-1;
+        grid-row: 2/3;
+      }
+      @include min-query(851px) {
+        grid-column: 8/10;
+      }
+      a {
+        color: var(--cor-branco-300);
+        font-size: 1rem;
+        line-height: 1.7;
+      }
+    }
+
+    .conteudo__descricao {
+      @include min-query(560px) {
+        grid-column: 2/-1;
+        grid-row: 3/4;
+      }
+      @include min-query(851px) {
+        grid-column: 5/-1;
+      }
+
+      font-size: 0.75rem;
+      line-height: 1.5;
+    }
+
+    .conteudo__copy {
+      @include min-query(560px) {
+        grid-column: 1/-1;
+        grid-row: 4/-1;
+      }
+      @include min-query(851px) {
+        grid-column: 1/-1;
+      }
+
+      font-size: 0.9375rem;
+    }
+  }
+}

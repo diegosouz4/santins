@@ -28,3 +28,21 @@
   align-items: $align;
   justify-content: $justify;
 }
+
+@mixin min-query($tamanho) {
+  @media (min-width: $tamanho) {
+    @content;
+  }
+}
+
+@mixin minmax-query($tamanhoMin, $tamanhoMax) {
+  @media (min-width: $tamanhoMin) and (max-width: $tamanhoMax) {
+    @content;
+  }
+}
+
+@mixin max-query($tamanho) {
+  @media (max-width: $tamanho) {
+    @content;
+  }
+}
