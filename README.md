@@ -2,7 +2,7 @@
 
 <h2>Visualização do Projeto</h2>
 <p>Para visitar o projeto, basta acessar o link:
-<a target="_blank" href="https://kenttuz.github.io/Test-Landing-Page-Fict-cia/">https://kenttuz.github.io/Test-Landing-Page-Fict-cia/</a></p>
+<a target="_blank" href="https://diegosouz4.github.io/santins/">https://diegosouz4.github.io/santins/</a></p>
 
 
 ## Tecnologias
